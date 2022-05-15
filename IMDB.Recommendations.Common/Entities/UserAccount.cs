@@ -1,4 +1,4 @@
-namespace IMDB.Recommendations.Domain.Entities
+namespace IMDB.Recommendations.Common.Entities
 {
     public class UserAccount
     {

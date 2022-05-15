@@ -10,14 +10,14 @@ namespace IMDB.Recommendations.Application.Features.GetRecommendedMovie
     public class GetRecommendedMovieHandler : IRequestHandler<GetRecommendedMovieQuery, MovieDto>
     {
         private readonly IMapper _mapper;
-        private readonly IIMDBDataProvider _imdbDataProvider;
+        private readonly IMoviesDataProvider _moviesDataProvider;
         private readonly IUserFavoritesRepository _userFavoritesRepository;
         private readonly IRecommendedMoviesRepository _recommendedMoviesRepository;
 
-        public GetRecommendedMovieHandler(IMapper mapper , IIMDBDataProvider imdbDataProvider, IUserFavoritesRepository userFavoritesRepository, IRecommendedMoviesRepository recommendedMoviesRepository)
+        public GetRecommendedMovieHandler(IMapper mapper , IMoviesDataProvider moviesDataProvider, IUserFavoritesRepository userFavoritesRepository, IRecommendedMoviesRepository recommendedMoviesRepository)
         {
             _mapper = mapper;
-            _imdbDataProvider = imdbDataProvider;
+            _moviesDataProvider = moviesDataProvider;
             _userFavoritesRepository = userFavoritesRepository;
             _recommendedMoviesRepository = recommendedMoviesRepository;
         }

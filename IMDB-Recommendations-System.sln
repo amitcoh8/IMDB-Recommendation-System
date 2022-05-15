@@ -8,13 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{2C988403-718
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BD96EA99-4E91-4479-BDDE-49D3340033AC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastracture", "Infrastracture", "{1DEF5EC7-A9F9-4B77-8C6B-FC8699576893}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1DEF5EC7-A9F9-4B77-8C6B-FC8699576893}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{21525E36-74B1-44D1-B796-5809B8FCE599}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB.Recommendations.Domain", "IMDB.Recommendations.Domain\IMDB.Recommendations.Domain.csproj", "{11E0763D-1E6E-46AB-B436-2B424FD5B157}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB.Recommendations.Common", "IMDB.Recommendations.Common\IMDB.Recommendations.Common.csproj", "{11E0763D-1E6E-46AB-B436-2B424FD5B157}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB.Recommendations.Application", "IMDB.Recommendations.Application\IMDB.Recommendations.Application.csproj", "{3D5973E0-52B7-4019-8806-753174370EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB.Recommendations.Infrastructure", "IMDB.Recommendations.Infrastructure\IMDB.Recommendations.Infrastructure.csproj", "{8187A9DC-27F5-4F41-8B3F-D98E7CC1CF33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB.Recommendations.Api", "IMDB.Recommendations.Api\IMDB.Recommendations.Api.csproj", "{BADC0E68-235C-4F35-A054-0747851EB8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB.Recommendations.Persistence", "IMDB.Recommendations.Persistence\IMDB.Recommendations.Persistence.csproj", "{42338B17-D07A-4F33-916B-58CA60B58A46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +34,9 @@ Global
 		{21525E36-74B1-44D1-B796-5809B8FCE599} = {7246FC10-CAA1-4013-9B75-CB2AE4E2A74B}
 		{11E0763D-1E6E-46AB-B436-2B424FD5B157} = {BD96EA99-4E91-4479-BDDE-49D3340033AC}
 		{3D5973E0-52B7-4019-8806-753174370EEA} = {BD96EA99-4E91-4479-BDDE-49D3340033AC}
+		{8187A9DC-27F5-4F41-8B3F-D98E7CC1CF33} = {1DEF5EC7-A9F9-4B77-8C6B-FC8699576893}
+		{BADC0E68-235C-4F35-A054-0747851EB8DA} = {2C988403-7188-4D34-B29A-FB7E70238C4B}
+		{42338B17-D07A-4F33-916B-58CA60B58A46} = {1DEF5EC7-A9F9-4B77-8C6B-FC8699576893}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{11E0763D-1E6E-46AB-B436-2B424FD5B157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +47,17 @@ Global
 		{3D5973E0-52B7-4019-8806-753174370EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D5973E0-52B7-4019-8806-753174370EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D5973E0-52B7-4019-8806-753174370EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8187A9DC-27F5-4F41-8B3F-D98E7CC1CF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8187A9DC-27F5-4F41-8B3F-D98E7CC1CF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8187A9DC-27F5-4F41-8B3F-D98E7CC1CF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8187A9DC-27F5-4F41-8B3F-D98E7CC1CF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADC0E68-235C-4F35-A054-0747851EB8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADC0E68-235C-4F35-A054-0747851EB8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADC0E68-235C-4F35-A054-0747851EB8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADC0E68-235C-4F35-A054-0747851EB8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42338B17-D07A-4F33-916B-58CA60B58A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42338B17-D07A-4F33-916B-58CA60B58A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42338B17-D07A-4F33-916B-58CA60B58A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42338B17-D07A-4F33-916B-58CA60B58A46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
