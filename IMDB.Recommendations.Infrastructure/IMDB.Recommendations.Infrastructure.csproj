@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>IMDB.Recommendations.Infrastructure</RootNamespace>
+      <UserSecretsId>88807ff7-1248-4350-b044-69fac69067d5</UserSecretsId>
+  </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="IMDbApiLib" Version="1.8.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\IMDB.Recommendations.Application\IMDB.Recommendations.Application.csproj" />
+    </ItemGroup>
+
+</Project>
